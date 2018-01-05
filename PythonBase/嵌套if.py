@@ -5,4 +5,8 @@ if i > 1:
     if 1 > 2:
         print 'i bigger than 2'
         print 'even better'
-    print 'outer'
+#    print 'outer'
+print i
+
+
+
