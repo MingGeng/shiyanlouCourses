@@ -1,0 +1,692 @@
+.
+├── ansible
+│   └── readme.md
+├── Bash
+│   ├── hello2.sh
+│   ├── hello.sh
+│   ├── my.txt
+│   └── touchMy.sh
+├── DNS_server
+│   └── readme.md
+├── Gitbook
+│   ├── _book
+│   │   ├── gitbook
+│   │   │   ├── fonts
+│   │   │   │   └── fontawesome
+│   │   │   │       ├── FontAwesome.otf
+│   │   │   │       ├── fontawesome-webfont.eot
+│   │   │   │       ├── fontawesome-webfont.svg
+│   │   │   │       ├── fontawesome-webfont.ttf
+│   │   │   │       ├── fontawesome-webfont.woff
+│   │   │   │       └── fontawesome-webfont.woff2
+│   │   │   ├── gitbook.js
+│   │   │   ├── gitbook-plugin-fontsettings
+│   │   │   │   ├── fontsettings.js
+│   │   │   │   └── website.css
+│   │   │   ├── gitbook-plugin-highlight
+│   │   │   │   ├── ebook.css
+│   │   │   │   └── website.css
+│   │   │   ├── gitbook-plugin-livereload
+│   │   │   │   └── plugin.js
+│   │   │   ├── gitbook-plugin-lunr
+│   │   │   │   ├── lunr.min.js
+│   │   │   │   └── search-lunr.js
+│   │   │   ├── gitbook-plugin-search
+│   │   │   │   ├── lunr.min.js
+│   │   │   │   ├── search.css
+│   │   │   │   ├── search-engine.js
+│   │   │   │   └── search.js
+│   │   │   ├── gitbook-plugin-sharing
+│   │   │   │   └── buttons.js
+│   │   │   ├── images
+│   │   │   │   ├── apple-touch-icon-precomposed-152.png
+│   │   │   │   └── favicon.ico
+│   │   │   ├── style.css
+│   │   │   └── theme.js
+│   │   ├── index.html
+│   │   └── search_index.json
+│   ├── README.md
+│   └── SUMMARY.md
+├── gitHooks
+│   └── readme.md
+├── hooks
+├── MarkdownEditor
+│   ├── Code
+│   │   └── editor
+│   │       ├── index.html
+│   │       ├── libs
+│   │       │   ├── ace
+│   │       │   │   ├── ace.js
+│   │       │   │   └── theme-monokai.js
+│   │       │   ├── bootstrap
+│   │       │   │   ├── css
+│   │       │   │   │   ├── bootstrap.css
+│   │       │   │   │   ├── bootstrap.css.map
+│   │       │   │   │   ├── bootstrap.min.css
+│   │       │   │   │   ├── bootstrap-theme.css
+│   │       │   │   │   ├── bootstrap-theme.css.map
+│   │       │   │   │   └── bootstrap-theme.min.css
+│   │       │   │   ├── fonts
+│   │       │   │   │   ├── glyphicons-halflings-regular.eot
+│   │       │   │   │   ├── glyphicons-halflings-regular.svg
+│   │       │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │       │   │   │   ├── glyphicons-halflings-regular.woff
+│   │       │   │   │   └── glyphicons-halflings-regular.woff2
+│   │       │   │   └── js
+│   │       │   │       ├── bootstrap.js
+│   │       │   │       ├── bootstrap.min.js
+│   │       │   │       └── npm.js
+│   │       │   ├── default.min.css
+│   │       │   ├── highlight.min.js
+│   │       │   ├── jquery.min.js
+│   │       │   ├── marked.min.js
+│   │       │   ├── mode-markdown.js
+│   │       │   └── monokai_sublime.min.css
+│   │       ├── main.js
+│   │       └── style.css
+│   ├── editor.tar
+│   ├── myEditor
+│   │   ├── index.html
+│   │   ├── libs
+│   │   │   ├── ace
+│   │   │   │   └── ace
+│   │   │   ├── bootstrap
+│   │   │   │   ├── css
+│   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   ├── bootstrap.css.map
+│   │   │   │   │   ├── bootstrap.min.css
+│   │   │   │   │   ├── bootstrap-theme.css
+│   │   │   │   │   ├── bootstrap-theme.css.map
+│   │   │   │   │   └── bootstrap-theme.min.css
+│   │   │   │   ├── fonts
+│   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   ├── glyphicons-halflings-regular.woff
+│   │   │   │   │   └── glyphicons-halflings-regular.woff2
+│   │   │   │   └── js
+│   │   │   │       ├── bootstrap.js
+│   │   │   │       ├── bootstrap.min.js
+│   │   │   │       └── npm.js
+│   │   │   ├── highlightjs
+│   │   │   │   ├── default.min.css
+│   │   │   │   ├── highlight.min.js
+│   │   │   │   └── monokai_sublime.min.css
+│   │   │   ├── jquery.min.js
+│   │   │   └── marked
+│   │   │       ├── bin
+│   │   │       │   └── marked
+│   │   │       ├── bower.json
+│   │   │       ├── component.json
+│   │   │       ├── doc
+│   │   │       │   ├── broken.md
+│   │   │       │   └── todo.md
+│   │   │       ├── Gulpfile.js
+│   │   │       ├── index.js
+│   │   │       ├── lib
+│   │   │       │   └── marked.js
+│   │   │       ├── LICENSE
+│   │   │       ├── Makefile
+│   │   │       ├── man
+│   │   │       │   └── marked.1
+│   │   │       ├── marked.min.js
+│   │   │       ├── package.json
+│   │   │       ├── package-lock.json
+│   │   │       ├── README.md
+│   │   │       └── test
+│   │   │           ├── browser
+│   │   │           │   ├── index.html
+│   │   │           │   ├── index.js
+│   │   │           │   └── test.js
+│   │   │           ├── index.js
+│   │   │           ├── new
+│   │   │           │   ├── autolink_lines.html
+│   │   │           │   ├── autolink_lines.text
+│   │   │           │   ├── blockquote_list_item.html
+│   │   │           │   ├── blockquote_list_item.text
+│   │   │           │   ├── case_insensitive_refs.html
+│   │   │           │   ├── case_insensitive_refs.text
+│   │   │           │   ├── def_blocks.html
+│   │   │           │   ├── def_blocks.text
+│   │   │           │   ├── double_link.html
+│   │   │           │   ├── double_link.text
+│   │   │           │   ├── escaped_angles.html
+│   │   │           │   ├── escaped_angles.text
+│   │   │           │   ├── gfm_break.breaks.html
+│   │   │           │   ├── gfm_break.breaks.text
+│   │   │           │   ├── gfm_code_hr_list.html
+│   │   │           │   ├── gfm_code_hr_list.text
+│   │   │           │   ├── gfm_code.html
+│   │   │           │   ├── gfm_code.text
+│   │   │           │   ├── gfm_del.html
+│   │   │           │   ├── gfm_del.text
+│   │   │           │   ├── gfm_em.html
+│   │   │           │   ├── gfm_em.text
+│   │   │           │   ├── gfm_hashtag.gfm.html
+│   │   │           │   ├── gfm_hashtag.gfm.text
+│   │   │           │   ├── gfm_hashtag.nogfm.html
+│   │   │           │   ├── gfm_hashtag.nogfm.text
+│   │   │           │   ├── gfm_links.html
+│   │   │           │   ├── gfm_links.text
+│   │   │           │   ├── gfm_tables.html
+│   │   │           │   ├── gfm_tables.text
+│   │   │           │   ├── hr_list_break.html
+│   │   │           │   ├── hr_list_break.text
+│   │   │           │   ├── lazy_blockquotes.html
+│   │   │           │   ├── lazy_blockquotes.text
+│   │   │           │   ├── list_item_text.html
+│   │   │           │   ├── list_item_text.text
+│   │   │           │   ├── loose_lists.html
+│   │   │           │   ├── loose_lists.text
+│   │   │           │   ├── main.html
+│   │   │           │   ├── main.text
+│   │   │           │   ├── nested_code.html
+│   │   │           │   ├── nested_code.text
+│   │   │           │   ├── nested_em.html
+│   │   │           │   ├── nested_em.text
+│   │   │           │   ├── nested_square_link.html
+│   │   │           │   ├── nested_square_link.text
+│   │   │           │   ├── not_a_link.html
+│   │   │           │   ├── not_a_link.text
+│   │   │           │   ├── ref_paren.html
+│   │   │           │   ├── ref_paren.text
+│   │   │           │   ├── same_bullet.html
+│   │   │           │   ├── same_bullet.text
+│   │   │           │   ├── text.smartypants.html
+│   │   │           │   ├── text.smartypants.text
+│   │   │           │   ├── toplevel_paragraphs.gfm.html
+│   │   │           │   ├── toplevel_paragraphs.gfm.text
+│   │   │           │   ├── tricky_list.html
+│   │   │           │   └── tricky_list.text
+│   │   │           ├── original
+│   │   │           │   ├── amps_and_angles_encoding.html
+│   │   │           │   ├── amps_and_angles_encoding.text
+│   │   │           │   ├── auto_links.html
+│   │   │           │   ├── auto_links.text
+│   │   │           │   ├── backslash_escapes.html
+│   │   │           │   ├── backslash_escapes.text
+│   │   │           │   ├── blockquotes_with_code_blocks.html
+│   │   │           │   ├── blockquotes_with_code_blocks.text
+│   │   │           │   ├── code_blocks.html
+│   │   │           │   ├── code_blocks.text
+│   │   │           │   ├── code_spans.html
+│   │   │           │   ├── code_spans.text
+│   │   │           │   ├── hard_wrapped_paragraphs_with_list_like_lines.html
+│   │   │           │   ├── hard_wrapped_paragraphs_with_list_like_lines.text
+│   │   │           │   ├── horizontal_rules.html
+│   │   │           │   ├── horizontal_rules.text
+│   │   │           │   ├── inline_html_advanced.html
+│   │   │           │   ├── inline_html_advanced.text
+│   │   │           │   ├── inline_html_comments.html
+│   │   │           │   ├── inline_html_comments.text
+│   │   │           │   ├── inline_html_simple.html
+│   │   │           │   ├── inline_html_simple.text
+│   │   │           │   ├── links_inline_style.html
+│   │   │           │   ├── links_inline_style.text
+│   │   │           │   ├── links_reference_style.html
+│   │   │           │   ├── links_reference_style.text
+│   │   │           │   ├── links_shortcut_references.html
+│   │   │           │   ├── links_shortcut_references.text
+│   │   │           │   ├── literal_quotes_in_titles.html
+│   │   │           │   ├── literal_quotes_in_titles.text
+│   │   │           │   ├── markdown_documentation_basics.html
+│   │   │           │   ├── markdown_documentation_basics.text
+│   │   │           │   ├── markdown_documentation_syntax.html
+│   │   │           │   ├── markdown_documentation_syntax.text
+│   │   │           │   ├── nested_blockquotes.html
+│   │   │           │   ├── nested_blockquotes.text
+│   │   │           │   ├── ordered_and_unordered_lists.html
+│   │   │           │   ├── ordered_and_unordered_lists.text
+│   │   │           │   ├── strong_and_em_together.html
+│   │   │           │   ├── strong_and_em_together.text
+│   │   │           │   ├── tabs.html
+│   │   │           │   ├── tabs.text
+│   │   │           │   ├── tidyness.html
+│   │   │           │   └── tidyness.text
+│   │   │           ├── README
+│   │   │           └── tests
+│   │   │               ├── amps_and_angles_encoding.html
+│   │   │               ├── amps_and_angles_encoding.text
+│   │   │               ├── autolink_lines.html
+│   │   │               ├── autolink_lines.text
+│   │   │               ├── auto_links.html
+│   │   │               ├── auto_links.text
+│   │   │               ├── backslash_escapes.html
+│   │   │               ├── backslash_escapes.text
+│   │   │               ├── blockquote_list_item.html
+│   │   │               ├── blockquote_list_item.text
+│   │   │               ├── blockquotes_with_code_blocks.html
+│   │   │               ├── blockquotes_with_code_blocks.text
+│   │   │               ├── case_insensitive_refs.html
+│   │   │               ├── case_insensitive_refs.text
+│   │   │               ├── code_blocks.html
+│   │   │               ├── code_blocks.text
+│   │   │               ├── code_spans.html
+│   │   │               ├── code_spans.text
+│   │   │               ├── def_blocks.html
+│   │   │               ├── def_blocks.text
+│   │   │               ├── double_link.html
+│   │   │               ├── double_link.text
+│   │   │               ├── escaped_angles.html
+│   │   │               ├── escaped_angles.text
+│   │   │               ├── gfm_break.breaks.html
+│   │   │               ├── gfm_break.breaks.text
+│   │   │               ├── gfm_code_hr_list.html
+│   │   │               ├── gfm_code_hr_list.text
+│   │   │               ├── gfm_code.html
+│   │   │               ├── gfm_code.text
+│   │   │               ├── gfm_del.html
+│   │   │               ├── gfm_del.text
+│   │   │               ├── gfm_em.html
+│   │   │               ├── gfm_em.text
+│   │   │               ├── gfm_hashtag.gfm.html
+│   │   │               ├── gfm_hashtag.gfm.text
+│   │   │               ├── gfm_hashtag.nogfm.html
+│   │   │               ├── gfm_hashtag.nogfm.text
+│   │   │               ├── gfm_links.html
+│   │   │               ├── gfm_links.text
+│   │   │               ├── gfm_tables.html
+│   │   │               ├── gfm_tables.text
+│   │   │               ├── hard_wrapped_paragraphs_with_list_like_lines.nogfm.html
+│   │   │               ├── hard_wrapped_paragraphs_with_list_like_lines.nogfm.text
+│   │   │               ├── horizontal_rules.html
+│   │   │               ├── horizontal_rules.text
+│   │   │               ├── hr_list_break.html
+│   │   │               ├── hr_list_break.text
+│   │   │               ├── inline_html_advanced.html
+│   │   │               ├── inline_html_advanced.text
+│   │   │               ├── inline_html_comments.html
+│   │   │               ├── inline_html_comments.text
+│   │   │               ├── inline_html_simple.html
+│   │   │               ├── inline_html_simple.text
+│   │   │               ├── lazy_blockquotes.html
+│   │   │               ├── lazy_blockquotes.text
+│   │   │               ├── links_inline_style.html
+│   │   │               ├── links_inline_style.text
+│   │   │               ├── links_reference_style.html
+│   │   │               ├── links_reference_style.text
+│   │   │               ├── links.sanitize.html
+│   │   │               ├── links.sanitize.text
+│   │   │               ├── links_shortcut_references.html
+│   │   │               ├── links_shortcut_references.text
+│   │   │               ├── list_item_text.html
+│   │   │               ├── list_item_text.text
+│   │   │               ├── literal_quotes_in_titles.html
+│   │   │               ├── literal_quotes_in_titles.text
+│   │   │               ├── loose_lists.html
+│   │   │               ├── loose_lists.text
+│   │   │               ├── main.html
+│   │   │               ├── main.text
+│   │   │               ├── markdown_documentation_basics.html
+│   │   │               ├── markdown_documentation_basics.text
+│   │   │               ├── markdown_documentation_syntax.html
+│   │   │               ├── markdown_documentation_syntax.text
+│   │   │               ├── nested_blockquotes.html
+│   │   │               ├── nested_blockquotes.text
+│   │   │               ├── nested_code.html
+│   │   │               ├── nested_code.text
+│   │   │               ├── nested_em.html
+│   │   │               ├── nested_em.text
+│   │   │               ├── nested_square_link.html
+│   │   │               ├── nested_square_link.text
+│   │   │               ├── not_a_link.html
+│   │   │               ├── not_a_link.text
+│   │   │               ├── ordered_and_unordered_lists.html
+│   │   │               ├── ordered_and_unordered_lists.text
+│   │   │               ├── ref_paren.html
+│   │   │               ├── ref_paren.text
+│   │   │               ├── same_bullet.html
+│   │   │               ├── same_bullet.text
+│   │   │               ├── strong_and_em_together.html
+│   │   │               ├── strong_and_em_together.text
+│   │   │               ├── tabs.html
+│   │   │               ├── tabs.text
+│   │   │               ├── text.smartypants.html
+│   │   │               ├── text.smartypants.text
+│   │   │               ├── tidyness.html
+│   │   │               ├── tidyness.text
+│   │   │               ├── toplevel_paragraphs.gfm.html
+│   │   │               ├── toplevel_paragraphs.gfm.text
+│   │   │               ├── tricky_list.html
+│   │   │               └── tricky_list.text
+│   │   ├── main.js
+│   │   └── style.css
+│   └── README.md
+├── mysql_basic
+│   └── readme.md
+├── Phd
+│   ├── PythonCrack
+│   │   ├── crack.py
+│   │   ├── __MACOSX
+│   │   │   └── python_captcha
+│   │   │       ├── examples
+│   │   │       └── iconset
+│   │   │           ├── 0
+│   │   │           ├── 1
+│   │   │           ├── 2
+│   │   │           ├── 3
+│   │   │           ├── 4
+│   │   │           ├── 5
+│   │   │           ├── 6
+│   │   │           ├── 7
+│   │   │           ├── 8
+│   │   │           ├── 9
+│   │   │           ├── a
+│   │   │           ├── b
+│   │   │           ├── c
+│   │   │           ├── d
+│   │   │           ├── e
+│   │   │           ├── f
+│   │   │           ├── g
+│   │   │           ├── h
+│   │   │           ├── i
+│   │   │           ├── j
+│   │   │           ├── k
+│   │   │           ├── l
+│   │   │           ├── m
+│   │   │           ├── n
+│   │   │           ├── o
+│   │   │           ├── p
+│   │   │           ├── q
+│   │   │           ├── r
+│   │   │           ├── s
+│   │   │           ├── t
+│   │   │           ├── u
+│   │   │           ├── v
+│   │   │           ├── w
+│   │   │           ├── x
+│   │   │           ├── y
+│   │   │           └── z
+│   │   └── python_captcha
+│   │       ├── captcha.gif
+│   │       ├── crack.py
+│   │       ├── examples
+│   │       │   ├── 0q1d10.gif
+│   │       │   ├── 0q3tje.gif
+│   │       │   ├── 24alb0.gif
+│   │       │   ├── 47j17b.gif
+│   │       │   ├── 4wc2fa.gif
+│   │       │   ├── 5dkzvo.gif
+│   │       │   ├── 5yj0qh.gif
+│   │       │   ├── 75rc1q.gif
+│   │       │   ├── 7s9t9j.gif
+│   │       │   ├── 8ibfkf.gif
+│   │       │   ├── 8p5gme.gif
+│   │       │   ├── 9f2luc.gif
+│   │       │   ├── 9m4wxf.gif
+│   │       │   ├── 9to1tk.gif
+│   │       │   ├── akfyav.gif
+│   │       │   ├── arochz.gif
+│   │       │   ├── b1tlzh.gif
+│   │       │   ├── b3rk8h.gif
+│   │       │   ├── b3ufl9.gif
+│   │       │   ├── bwk5jx.gif
+│   │       │   ├── bwybgy.gif
+│   │       │   ├── cks0qx.gif
+│   │       │   ├── cpyhwg.gif
+│   │       │   ├── e80qy3.gif
+│   │       │   ├── egjg5t.gif
+│   │       │   ├── fn7g5x.gif
+│   │       │   ├── hd0qli.gif
+│   │       │   ├── iyusjy.gif
+│   │       │   ├── jfbwe2.gif
+│   │       │   ├── jkmtiq.gif
+│   │       │   ├── k0qgal.gif
+│   │       │   ├── k6e2ir.gif
+│   │       │   ├── kc0qlk.gif
+│   │       │   ├── kc7k5z.gif
+│   │       │   ├── l9pelg.gif
+│   │       │   ├── lzv3a7.gif
+│   │       │   ├── mc1sge.gif
+│   │       │   ├── n67dm8.gif
+│   │       │   ├── nlrzo7.gif
+│   │       │   ├── o2misy.gif
+│   │       │   ├── p15jnd.gif
+│   │       │   ├── pmiuhq.gif
+│   │       │   ├── qfwix9.gif
+│   │       │   ├── r2lvkd.gif
+│   │       │   ├── r6r12e.gif
+│   │       │   ├── t18pvs.gif
+│   │       │   ├── t6kh7c.gif
+│   │       │   ├── t8gwjc.gif
+│   │       │   ├── Thumbs.db
+│   │       │   ├── uc1rdk.gif
+│   │       │   ├── v63gde.gif
+│   │       │   ├── vp54ec.gif
+│   │       │   └── xfnrsn.gif
+│   │       └── iconset
+│   │           ├── 0
+│   │           │   ├── 0.gif
+│   │           │   ├── 136127c6fc10fd0e0853e7d747efa41d.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 1
+│   │           │   ├── a46dcb247bda5382a45ed2f57da51622.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 2
+│   │           │   ├── 056ffb1fd397877d0848eb6cf9b839f3.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 3
+│   │           │   ├── 2.gif
+│   │           │   ├── 7a7a0fef0c8d3121c6df1ac147533aa3.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 4
+│   │           │   ├── 040e36994650070f00b7c9b4d623930b.gif
+│   │           │   ├── 6.gif
+│   │           │   ├── bd7b0003b7d0c8458a25ebd6663c81bc.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 5
+│   │           │   ├── 197909df272a1b1a578406b718b9025e.gif
+│   │           │   ├── 2.gif
+│   │           │   ├── 3dcefbdea2ec57dc6e2e148a508f174a.gif
+│   │           │   ├── c8d4f9c4807b9547ff5b6664a2225dde.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 6
+│   │           │   ├── 0217c966e78d7dbf288b75123876c0ec.gif
+│   │           │   ├── 0.gif
+│   │           │   ├── 5.gif
+│   │           │   ├── 9b88eba8a948df41cdf6ea82cbefe6cb.gif
+│   │           │   ├── ab4dafaea8534d4a4fec0e6cb7b8d7fb.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 7
+│   │           │   ├── 13f34c3eac168090a288fbbb51cf8d95.gif
+│   │           │   ├── 4.gif
+│   │           │   ├── 5b9e37490692eebbd4dcec3e437f3ec5.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 8
+│   │           │   ├── f138493e0bfe3c0cb6cb5c5b9377e42c.gif
+│   │           │   └── Thumbs.db
+│   │           ├── 9
+│   │           │   ├── 474153016bfe4fcbd27598ecd35c40cb.gif
+│   │           │   └── Thumbs.db
+│   │           ├── a
+│   │           │   ├── 185ab4dd9bc1148ac16aaacb14f330e8.gif
+│   │           │   ├── 1.gif
+│   │           │   ├── 37a6e9572b340bec0320cfd1d680925c.gif
+│   │           │   ├── 4.gif
+│   │           │   ├── 999702f4e904471b8fbf6052eb1f804e.gif
+│   │           │   ├── d147cc89a891f97773f93d94cdff76d5.gif
+│   │           │   ├── f4556d87f5e1ed0f267404670270d885.gif
+│   │           │   └── Thumbs.db
+│   │           ├── b
+│   │           │   ├── 0.gif
+│   │           │   ├── 2.gif
+│   │           │   ├── 3.gif
+│   │           │   ├── 5a.gif
+│   │           │   ├── 5.gif
+│   │           │   └── Thumbs.db
+│   │           ├── c
+│   │           │   ├── 2934db4192b933657baafaac5ea08c3d.gif
+│   │           │   └── Thumbs.db
+│   │           ├── d
+│   │           │   ├── 9f988d2da232e73bcfaa89d56ee8e1dc.gif
+│   │           │   ├── c6885c9577c2a3c64e4de5b55ee90f40.gif
+│   │           │   └── Thumbs.db
+│   │           ├── e
+│   │           │   ├── 1.gif
+│   │           │   ├── 233.gif
+│   │           │   ├── 3.gif
+│   │           │   ├── 9354e249bb3b601c211d11599cee0cf9.gif
+│   │           │   ├── d2730e33be7df962dea138bf5d76ebc1.gif
+│   │           │   └── Thumbs.db
+│   │           ├── f
+│   │           │   ├── 71d1882984dc1f24f5c5606e36372ec8.gif
+│   │           │   ├── 8f73cbea43b18d94472611f41109c80e.gif
+│   │           │   ├── d0cd6d34da1f5df0b636407d394fd8fe.gif
+│   │           │   └── Thumbs.db
+│   │           ├── g
+│   │           │   ├── 1.gif
+│   │           │   ├── 4.gif
+│   │           │   └── Thumbs.db
+│   │           ├── h
+│   │           │   ├── 5.gif
+│   │           │   ├── d3fc8a15ac7e0664cca53766d322814d.gif
+│   │           │   ├── ebd34ada21fb6ca1d39cc12829a405ae.gif
+│   │           │   └── Thumbs.db
+│   │           ├── i
+│   │           │   ├── 2.gif
+│   │           │   ├── 3.gif
+│   │           │   └── Thumbs.db
+│   │           ├── j
+│   │           │   ├── 8cd6e8039c58a9e5613e886ba7cdda5d.gif
+│   │           │   ├── d8150da674a65a6cfe194052a825383c.gif
+│   │           │   └── Thumbs.db
+│   │           ├── k
+│   │           │   ├── ad198f0b2430d4d3a1eb7fcd7e2db9d5.gif
+│   │           │   └── Thumbs.db
+│   │           ├── l
+│   │           │   ├── 1.gif
+│   │           │   ├── 5e2a0ae0f5cd66618274371aa9b3fe11.gif
+│   │           │   ├── 718efb248bf6b954003e991be45c5016.gif
+│   │           │   ├── adfs1.gif
+│   │           │   └── Thumbs.db
+│   │           ├── m
+│   │           │   ├── 5.gif
+│   │           │   └── Thumbs.db
+│   │           ├── n
+│   │           │   ├── 167f01b37e1c5f297030c52001c88914.gif
+│   │           │   ├── 2.gif
+│   │           │   └── Thumbs.db
+│   │           ├── o
+│   │           │   ├── 4.gif
+│   │           │   └── Thumbs.db
+│   │           ├── p
+│   │           │   ├── 6a974f42fc8a47389347bd0cadc221aa.gif
+│   │           │   └── Thumbs.db
+│   │           ├── q
+│   │           │   ├── 1.gif
+│   │           │   ├── 39cc48b101c99761d08d4f37ce1e14be.gif
+│   │           │   ├── 51da1a83211b3d0ac12287e6cc88f18f.gif
+│   │           │   ├── 67b4b88e78441cf04933dff353996186.gif
+│   │           │   └── Thumbs.db
+│   │           ├── r
+│   │           │   ├── 0.gif
+│   │           │   ├── 7a55275ed1f0605bf894399850ea791a.gif
+│   │           │   ├── 826436717e96bad5434c46c86a35bf93.gif
+│   │           │   └── Thumbs.db
+│   │           ├── s
+│   │           │   ├── 9a39d6d490c1f7ad67e7f62ad22c66ff.gif
+│   │           │   └── Thumbs.db
+│   │           ├── t
+│   │           │   ├── 4.gif
+│   │           │   ├── aeb537a5d1465a2fb489106f1c3f62a2.gif
+│   │           │   └── Thumbs.db
+│   │           ├── Thumbs.db
+│   │           ├── u
+│   │           │   ├── 2c2a6482f89ad2f2d6f0b6ab5e77b4ad.gif
+│   │           │   ├── 3.gif
+│   │           │   └── Thumbs.db
+│   │           ├── v
+│   │           │   ├── 0.gif
+│   │           │   ├── 6f0dd3827d64a5f0d55343fa07aeb665.gif
+│   │           │   └── Thumbs.db
+│   │           ├── w
+│   │           │   ├── f425a6b30ab315c1e6174541e3c89c9d.gif
+│   │           │   └── Thumbs.db
+│   │           ├── x
+│   │           │   ├── 2.gif
+│   │           │   ├── 93d88f2b5c98b79b2fba2f230a3ce56d.gif
+│   │           │   ├── 99e577bc7a75f5aeb55d0c109351478f.gif
+│   │           │   └── Thumbs.db
+│   │           ├── y
+│   │           │   ├── b215a9c9972ff9a4635ec98fc2a8613f.gif
+│   │           │   └── Thumbs.db
+│   │           └── z
+│   │               ├── 12546a3fde31f666a0fdeb68aaa5656b.gif
+│   │               ├── 3.gif
+│   │               ├── 86b5af4d14c0de278deba6954595db05.gif
+│   │               ├── 981ca6fe34eaf28511810a47f7465c5e.gif
+│   │               ├── c90a126594bf8d45559da44b95539e55.gif
+│   │               └── Thumbs.db
+│   └── readme.md
+├── PythonBase
+│   ├── hello.py
+│   ├── helloScript.py
+│   ├── ifDemo.py
+│   ├── moreif.py
+│   ├── README.md
+│   └── 嵌套if.py
+├── RubyBasic
+│   ├── myRuby
+│   │   ├── hello.rb
+│   │   ├── test2.rb
+│   │   ├── test3.rb
+│   │   ├── test4.rb
+│   │   └── test.rb
+│   └── ruby-1
+│       ├── __MACOSX
+│       │   └── 基础语法
+│       └── 基础语法
+│           ├── hello.rb
+│           ├── test2.rb
+│           ├── test3.rb
+│           └── test.rb
+├── SchoolFlowerRatingSys
+│   ├── Beauty
+│   │   ├── DBMysql.php
+│   │   ├── imgs
+│   │   │   ├── 1.jpg
+│   │   │   ├── 2.jpg
+│   │   │   ├── 3.jpg
+│   │   │   ├── 4.jpg
+│   │   │   ├── 5.jpg
+│   │   │   └── 6.jpg
+│   │   ├── index.php
+│   │   ├── ranklist.php
+│   │   ├── Rank.php
+│   │   └── stu.sql
+│   ├── Beauty.zip
+│   └── README.md
+├── shiyanlou-LinuxBase
+│   ├── apt-get.md
+│   ├── col.md
+│   ├── data_flow_redirect.md
+│   ├── Documents
+│   │   └── test.c
+│   ├── dpkg.md
+│   ├── full1.md
+│   ├── full2.md
+│   ├── hello
+│   ├── join.md
+│   ├── Linux-crontab.md
+│   ├── linux.process
+│   ├── linux-process-manage.md
+│   ├── ls
+│   ├── passwd
+│   ├── paste.md
+│   ├── README.md
+│   ├── redirect
+│   ├── sample_text_process.md
+│   ├── sed.md
+│   ├── somefile
+│   ├── someshell
+│   ├── test
+│   ├── top.md
+│   └── tr.md
+├── TCPIP
+├── tree
+└── VIM
+    ├── 3.md
+    ├── protocols
+    └── readme.md
+
+140 directories, 549 files
